@@ -8,8 +8,7 @@ function App() {
 
   //load locationStorage
   useEffect(() => {
-    const items = localStorage.getItem("items");
-    if (items != null) {
+    if (localStorage.getItem("person") != null) {
       const buffer = localStorage.getItem("person");
       const data_list = JSON.parse(buffer);
       setPerson(data_list);

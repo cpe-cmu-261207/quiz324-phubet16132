@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-const FormCard = (porps) => {
+const FormCard = (props) => {
   const [name, setName] = useState("");
   const [gender, setGender] = useState("");
   const [age, setAge] = useState("");
