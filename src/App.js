@@ -32,16 +32,14 @@ function App() {
     });
   }
 
-  function renderForm() {
-    return <FormCard setPerson={setPerson} person={person} />;
-  }
-
   return (
     <div className="card" style={{ width: 400 }}>
       <div className="card-content">
         <div className="mb-4"></div>
-        {renderForm()}
+
+        <FormCard setPerson={setPerson} person={person} />
         {/* display tables for all persons */}
+
         <p className="is-4 title has-text-centered">Pet List</p>
         {/* sample table */}
         {renderPerson()}
